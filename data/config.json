@@ -1,0 +1,22 @@
+[
+  {
+    "tplId": "test",
+    "dataPath": "http://localhost/html5/data/data.json",
+    "class": "col-md-12",
+    "scripts": ["http://localhost/html5/js/page/index.js"]
+  },
+  {
+    "tpl": "",
+    "data": {},
+    "class": "col-md-6",
+    "scripts": ["http://localhost/html5/js/test.js"]
+  },
+  {
+    "html": "<h2>马炟</h2>",
+    "class": "col-md-6",
+    "scripts": []
+  },
+  {
+    "scripts": []
+  }
+]

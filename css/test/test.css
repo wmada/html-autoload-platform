@@ -1,0 +1,1570 @@
+@font-face {
+    font-family: "MonoNumerals";
+    src: url("http://cdn.gotraffic.net/v/20130905_121604/stylesheets/type/BloombergMonoNumerals-Heavy.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: BloombergL;
+    font-weight: 300;
+    src: url("http://cdn.gotraffic.net/v/20130905_121604/stylesheets/type/BloombergL-book.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: BloombergL;
+    font-weight: 500;
+    src: url("http://cdn.gotraffic.net/v/20130905_121604/stylesheets/type/BloombergL-medium.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: BloombergL;
+    font-weight: 700;
+    src: url("http://cdn.gotraffic.net/v/20130905_121604/stylesheets/type/BloombergL-heavy.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: BloombergL;
+    font-weight: 900;
+    src: url("http://cdn.gotraffic.net/v/20130905_121604/stylesheets/type/BloombergL-black.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: Akzidenz;
+    font-weight: 500;
+    src: url("http://cdn.gotraffic.net/v/20130905_121604/stylesheets/type/Akzidenz-medium.otf") format("opentype")
+}
+
+@font-face {
+    font-family: Akzidenz;
+    font-weight: 700;
+    src: url("http://cdn.gotraffic.net/v/20130905_121604/stylesheets/type/Akzidenz-bold.otf") format("opentype")
+}
+
+@font-face {
+    font-family: bloomberg_iconsregular;
+    src: url("http://cdn.gotraffic.net/v/20130905_121604/stylesheets/type/bloombergicons-regular-webfont.ttf") format("truetype"), url(data:application/font-woff;charset=utf-8;base64,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) format("woff")
+}
+
+body {
+    margin: 0;
+    background: #000
+}
+
+.container {
+    width: 1024px;
+    margin: 0 auto
+}
+
+.dvz-ranks {
+    font-family: BloombergL, sans-serif;
+    padding: 0 12px;
+    background: #000
+}
+
+.dvz-ranks * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.dvz-ranks a {
+    text-decoration: none
+}
+
+.dvz-ranks .ic {
+    display: inline-block;
+    font-family: "bloomberg_iconsregular";
+    font-weight: normal !important;
+    -webkit-font-smoothing: antialiased
+}
+
+.dvz-ranks .ic-label {
+    font: 900 14px/18px "Akzidenz", "Arial";
+    margin-top: 10px
+}
+
+.dvz-button {
+    display: inline-block;
+    font: 900 21px BloombergL, Arial, sans-serif;
+    line-height: 18px;
+    background-color: #646e78;
+    border: 2px solid #646e78;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    margin: 4px 0 0 0;
+    padding: 0 6px;
+    vertical-align: baseline;
+    cursor: pointer;
+    height: 27px
+}
+
+.dvz-button:hover {
+    background-color: #dce6f0;
+    border-color: #dce6f0
+}
+
+.dvz-dropdown {
+    position: relative
+}
+
+.dvz-menu {
+    position: absolute;
+    display: none;
+    top: 35px;
+    left: -4px;
+    z-index: 999;
+    margin: 0;
+    padding: 4px;
+    background: #000;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px
+}
+
+.dvz-menu.is-open {
+    display: block
+}
+
+.dvz-menu li {
+    display: block;
+    padding: 0;
+    margin: 0 0 5px 0;
+    font: 900 21px BloombergL, Arial, sans-serif;
+    line-height: 21px;
+    white-space: nowrap;
+    background: #46505a;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: #fff
+}
+
+.dvz-menu li:hover {
+    background: #5c6a77
+}
+
+.dvz-menu li:last-child {
+    margin-bottom: 0
+}
+
+.dvz-menu li a {
+    display: block;
+    padding: 5px 6px;
+    color: inherit
+}
+
+.dvz-submenu {
+    overflow: hidden;
+    height: 0;
+    -webkit-transition: height 0.5s ease 0.25s;
+    -moz-transition: height 0.5s ease 0.25s;
+    -o-transition: height 0.5s ease 0.25s;
+    transition: height 0.5s ease 0.25s
+}
+
+.dvz-submenu a {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 21px;
+    opacity: 0.8
+}
+
+.dvz-submenu a:hover {
+    opacity: 1
+}
+
+.dvz-menu > li:hover .dvz-submenu.items-0 {
+    height: 0px
+}
+
+.dvz-menu > li:hover .dvz-submenu.items-1 {
+    height: 31px
+}
+
+.dvz-menu > li:hover .dvz-submenu.items-2 {
+    height: 62px
+}
+
+.dvz-menu > li:hover .dvz-submenu.items-3 {
+    height: 93px
+}
+
+.dvz-menu > li:hover .dvz-submenu.items-4 {
+    height: 124px
+}
+
+.dvz-menu > li:hover .dvz-submenu.items-5 {
+    height: 155px
+}
+
+.dvz-menu > li:hover .dvz-submenu.items-6 {
+    height: 186px
+}
+
+.dvz-menu > li:hover .dvz-submenu.items-7 {
+    height: 217px
+}
+
+.dvz-menu > li:hover .dvz-submenu.items-8 {
+    height: 248px
+}
+
+.dvz-menu > li:hover .dvz-submenu.items-9 {
+    height: 279px
+}
+
+.dvz-menu > li:hover .dvz-submenu.items-10 {
+    height: 310px
+}
+
+.dvz-menu > li:hover .dvz-submenu.items-11 {
+    height: 341px
+}
+
+.dvz-menu > li:hover .dvz-submenu.items-12 {
+    height: 372px
+}
+
+.dvz-menu > li:hover .dvz-submenu.items-13 {
+    height: 403px
+}
+
+.dvz-menu > li:hover .dvz-submenu.items-14 {
+    height: 434px
+}
+
+.dvz-menu > li:hover .dvz-submenu.items-15 {
+    height: 465px
+}
+
+.dvz-menu > li:hover .dvz-submenu.items-16 {
+    height: 496px
+}
+
+.dvz-menu > li:hover .dvz-submenu.items-17 {
+    height: 527px
+}
+
+.dvz-menu > li:hover .dvz-submenu.items-18 {
+    height: 558px
+}
+
+.dvz-menu > li:hover .dvz-submenu.items-19 {
+    height: 589px
+}
+
+.dvz-menu > li:hover .dvz-submenu.items-20 {
+    height: 620px
+}
+
+.dvz-menu .topic-business {
+    background: #580090
+}
+
+.dvz-menu .topic-business:hover {
+    background: #7700c3
+}
+
+.dvz-menu .topic-economics {
+    background: #e121a1
+}
+
+.dvz-menu .topic-economics:hover {
+    background: #e74eb4
+}
+
+.dvz-menu .topic-education {
+    background: #006fbe
+}
+
+.dvz-menu .topic-education:hover {
+    background: #008df1
+}
+
+.dvz-menu .topic-investing {
+    background: #00c497
+}
+
+.dvz-menu .topic-investing:hover {
+    background: #00f7be
+}
+
+.dvz-menu .topic-lifestyle {
+    background: #9e21bf
+}
+
+.dvz-menu .topic-lifestyle:hover {
+    background: #ba37dc
+}
+
+.dvz-menu .topic-politics-and-policy {
+    background: #9b60ff
+}
+
+.dvz-menu .topic-politics-and-policy:hover {
+    background: #bb93ff
+}
+
+.dvz-menu .topic-personal-finance {
+    background: #00b5dd
+}
+
+.dvz-menu .topic-personal-finance:hover {
+    background: #11d4ff
+}
+
+.dvz-filters {
+    height: 55px
+}
+
+.dvz-filters .content {
+    width: 1000px;
+    z-index: 9999;
+    height: 55px;
+    padding: 10px 14px;
+    border-bottom: 1px solid #46505a;
+    border-top: 1px solid #46505a;
+    background: #000;
+    color: #87919b
+}
+
+.dvz-filters .content.affix {
+    position: fixed;
+    top: 89px
+}
+
+.dvz-filters .caption, .dvz-filters .dvz-dropdown {
+    float: left;
+    display: block;
+    margin-right: 10px
+}
+
+.dvz-filters .caption {
+    font: 300 21px BloombergL, arial;
+    line-height: 35px;
+    -webkit-font-smoothing: antialiased
+}
+
+.dvz-filters .sort-by {
+    float: right;
+    width: 300px;
+    font: 700 14px Akzidenz, Arial;
+    line-height: 35px;
+    -webkit-font-smoothing: antialiased
+}
+
+.dvz-filters .sort-by a {
+    float: right;
+    color: #afb9c3;
+    margin-left: 10px
+}
+
+.dvz-filters .sort-by a.active {
+    color: #fff
+}
+
+.dvz-filters .sort-by .ic-inline {
+    position: relative;
+    top: -2px;
+    padding-right: 4px;
+    font-size: 28px;
+    float: left
+}
+
+.dropdown-menu {
+    display: none
+}
+
+.dvz-footnotes {
+    margin-top: 10px;
+    font-size: 12.6px;
+    color: #87919b
+}
+
+.dvz-footnotes div {
+    margin-top: 5px
+}
+
+.dvz-visual-data-brand {
+    height: 66px
+}
+
+.dvz-visual-data-brand .content {
+    -webkit-font-smoothing: antialiased;
+    width: 1000px;
+    z-index: 999;
+    padding: 20px 14px;
+    background: #000;
+    border-bottom: 1px solid #46505a
+}
+
+.dvz-visual-data-brand .content .product-title {
+    -webkit-transition: opacity 0.25s;
+    -moz-transition: opacity 0.25s;
+    -o-transition: opacity 0.25s;
+    transition: opacity 0.25s;
+    opacity: 0
+}
+
+.dvz-visual-data-brand .content.affix {
+    position: fixed;
+    top: 24px
+}
+
+.dvz-visual-data-brand .content.affix .product-title {
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+    opacity: 1
+}
+
+.dvz-visual-data-brand a {
+    color: #fff;
+    font-family: BloombergL, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none
+}
+
+.dvz-visual-data-brand span {
+    font-weight: 300
+}
+
+.dvz-product-header {
+    padding: 20px 14px;
+    position: relative;
+    height: 80px;
+    overflow: hidden;
+    -webkit-transition: background 0.4s, height 0.4s;
+    -moz-transition: background 0.4s, height 0.4s;
+    -o-transition: background 0.4s, height 0.4s;
+    transition: background 0.4s, height 0.4s
+}
+
+.dvz-product-header.is-open {
+    background: #1e262e;
+    height: 270px
+}
+
+.dvz-product-header h1, .dvz-product-header h2 {
+    margin: 0;
+    height: 40px;
+    line-height: 40px;
+    color: #fff
+}
+
+.dvz-product-header h1 {
+    font-family: BloombergL, sans-serif;
+    font-size: 32px;
+    font-weight: 700
+}
+
+.dvz-product-header h1 span {
+    font-weight: 300
+}
+
+.dvz-product-header h1 a {
+    color: #fff
+}
+
+.dvz-product-header h2 {
+    font-family: Akzidenz, sans-serif;
+    font-size: 18px;
+    font-weight: 500
+}
+
+.dvz-product-header p {
+    color: #87919b;
+    font-family: Akzidenz, arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin: 0
+}
+
+.dvz-product-header .product-info {
+    overflow: auto
+}
+
+.dvz-product-header .product-info .left, .dvz-product-header .product-info .right {
+    float: left;
+    padding-top: 10px
+}
+
+.dvz-product-header .product-info .left {
+    width: 70%;
+    padding-right: 20px
+}
+
+.dvz-product-header .product-info .right {
+    width: 30%
+}
+
+.dvz-product-header .product-info a {
+    color: #dce6f0
+}
+
+.dvz-product-header .product-info a:hover {
+    text-decoration: underline
+}
+
+.dvz-product-header .tools {
+    position: absolute;
+    top: 28px;
+    right: 14px;
+    width: 400px;
+    text-align: right
+}
+
+.dvz-product-header .tools .info {
+    position: relative;
+    top: -7px;
+    cursor: pointer;
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 22px;
+    background: #87919b;
+    padding: 1px 4px;
+    text-transform: uppercase;
+    font-weight: 800;
+    border-radius: 3px;
+    margin-left: 22px;
+    -webkit-transition: background-color .2s;
+    -moz-transition: background-color .2s;
+    transition: background-color .2s
+}
+
+.dvz-product-header .tools .info:hover {
+    background: #fff
+}
+
+.tooltip .dvz-share span {
+    background-image: url(../images/all-share-icons-rev-white-24px-tall.png);
+    background-color: #87919b
+}
+
+.tooltip .dvz-share span:hover {
+    background-color: #46505a
+}
+
+.dvz-share {
+    display: inline-block;
+    height: 24px
+}
+
+.dvz-share span {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    transition: opacity 0.2s;
+    cursor: pointer;
+    background-image: url(../images/all-share-icons-rev-black-24px-tall.png);
+    background-color: #87919b;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    -webkit-transition: background-color .2s;
+    -moz-transition: background-color .2s;
+    transition: background-color .2s
+}
+
+.dvz-share span:hover {
+    background-color: #fff
+}
+
+.dvz-share .dvz-share-fb {
+    background-position: -24px 0px
+}
+
+.dvz-share .dvz-share-twtr {
+    background-position: -48px 0px
+}
+
+.dvz-share .dvz-share-gpls {
+    background-position: -72px 0px
+}
+
+.dvz-share .dvz-share-lin {
+    background-position: -96px 0px
+}
+
+.dvz-pinned-rank-header {
+    width: 1000px;
+    z-index: 999;
+    position: fixed !important;
+    height: 60px;
+    top: 144px;
+    display: none
+}
+
+.dvz-pinned-rank-header.visible {
+    display: block
+}
+
+#rank-links {
+    margin-top: 14px
+}
+
+.rank-link, .rank-pivot {
+    display: block;
+    cursor: pointer;
+    height: 60px;
+    margin-bottom: 4px;
+    position: relative
+}
+
+.rank-link .front, .rank-link .back, .rank-pivot .front, .rank-pivot .back {
+    display: block;
+    padding: 10px 90px 10px 12px;
+    color: #fff;
+    height: 60px;
+    overflow: hidden;
+    white-space: nowrap
+}
+
+.rank-link .front, .rank-pivot .front {
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s
+}
+
+.rank-link.hid .front, .rank-pivot.hid .front {
+    opacity: 0;
+    filter: alpha(opacity=0)
+}
+
+.rank-link .back, .rank-pivot .back {
+    color: #000;
+    background: #fff
+}
+
+.rank-link h1, .rank-pivot h1 {
+    margin: 0
+}
+
+.rank-link.topic-business .front, .rank-pivot.topic-business .front {
+    background: #580090
+}
+
+.rank-link.topic-economics .front, .rank-pivot.topic-economics .front {
+    background: #e121a1
+}
+
+.rank-link.topic-education .front, .rank-pivot.topic-education .front {
+    background: #006fbe
+}
+
+.rank-link.topic-investing .front, .rank-pivot.topic-investing .front {
+    background: #00c497
+}
+
+.rank-link.topic-lifestyle .front, .rank-pivot.topic-lifestyle .front {
+    background: #9e21bf
+}
+
+.rank-link.topic-politics-and-policy .front, .rank-pivot.topic-politics-and-policy .front {
+    background: #9b60ff
+}
+
+.rank-link.topic-personal-finance .front, .rank-pivot.topic-personal-finance .front {
+    background: #00b5dd
+}
+
+.rank-link-title, .rank-pivot-title {
+    font-weight: 300;
+    font-size: 32px;
+    margin: 0;
+    -webkit-font-smoothing: antialiased
+}
+
+.rank-pivot:hover > .front {
+    background: #fff;
+    color: #000
+}
+
+.rank-pivot-position {
+    font-weight: 900;
+    font-size: 32px
+}
+
+.is-new {
+    font-size: 50px;
+    line-height: 24px;
+    font-weight: normal;
+    display: inline-block;
+    padding-left: 6px;
+    opacity: 0.8;
+    filter: alpha(opacity=80)
+}
+
+.is-pick {
+    position: absolute;
+    top: 18px;
+    right: 14px;
+    font-size: 35px;
+    color: #000;
+    opacity: 0.4;
+    filter: alpha(opacity=40)
+}
+
+.rank-link-open, .rank-link-close {
+    position: absolute;
+    top: 16px;
+    right: 14px;
+    font-size: 18px;
+    -webkit-transition: color, opacity, 0.4s;
+    -moz-transition: color, opacity, 0.4s;
+    -o-transition: color, opacity, 0.4s;
+    transition: color, opacity, 0.4s
+}
+
+.rank-link-open > .ic, .rank-link-close > .ic {
+    font-size: 35px;
+    line-height: 18px;
+    position: relative;
+    top: 6px
+}
+
+.rank-link-open {
+    color: #646e78
+}
+
+.rank-link-open:hover {
+    color: #46505a
+}
+
+.rank-link-close {
+    color: #dce6f0;
+    opacity: 0.4;
+    filter: alpha(opacity=40)
+}
+
+.rank-link-close:hover {
+    opacity: 0.8;
+    filter: alpha(opacity=80)
+}
+
+.rank-link-close {
+    display: none
+}
+
+.rank-link.selected {
+    margin-bottom: 0;
+    background: #46505a
+}
+
+#rank-links.filtered .rank-link.filtered .front {
+    background: #1e262e;
+    color: #646e78
+}
+
+#rank-links.selected .rank-link:not(.selected) .front {
+    background: #1e262e;
+    color: #646e78
+}
+
+.flip {
+    position: relative;
+    -webkit-perspective: 800px
+}
+
+.flip > * {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0
+}
+
+.flip > .front {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    z-index: 2
+}
+
+.flip > .back {
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+    z-index: 1
+}
+
+.flip:hover > .front {
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+    z-index: 1
+}
+
+.flip:hover > .back {
+    -webkit-transform: rotateX(360deg);
+    -moz-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    -o-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+    z-index: 2
+}
+
+.flip.selected .is-pick, .flip.selected:hover .is-pick {
+    display: none
+}
+
+.flip.selected .rank-link-close, .flip.selected:hover .rank-link-close {
+    display: block
+}
+
+.flip.selected > .front, .flip.selected:hover > .front {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+    transform: rotateX(0deg)
+}
+
+.flip.selected.post-box > .front, .flip.selected:hover.post-box > .front {
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: rotateX(30deg);
+    -moz-transform: rotateX(30deg);
+    -ms-transform: rotateX(30deg);
+    -o-transform: rotateX(30deg);
+    transform: rotateX(30deg)
+}
+
+.flip.selected > .back, .flip.selected:hover > .back {
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+    z-index: -1
+}
+
+.rank-pivot-title {
+    position: absolute;
+    left: 90px
+}
+
+.pivot:hover {
+    background: #fff;
+    color: #000
+}
+
+.rank-pivot-position {
+    font-weight: 900;
+    font-size: 32px
+}
+
+.entity-title {
+    position: relative;
+    background: #1e262e;
+    font-weight: 900;
+    color: #fff;
+    padding: 10px 90px 10px 18px;
+    -webkit-transition: background-color 0.4s;
+    -moz-transition: background-color 0.4s;
+    -o-transition: background-color 0.4s;
+    transition: background-color 0.4s;
+    margin-bottom: 4px
+}
+
+.entity-title h1 {
+    margin: 0
+}
+
+.entity-title .ic {
+    position: absolute;
+    top: 4px;
+    right: 0;
+    font-size: 80px;
+    line-height: 55px;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    -webkit-transition: opacity 0.4s;
+    -moz-transition: opacity 0.4s;
+    -o-transition: opacity 0.4s;
+    transition: opacity 0.4s
+}
+
+.entity-title:hover {
+    background: #46505a
+}
+
+.entity-title:hover .ic {
+    opacity: 1;
+    filter: alpha(opacity=100)
+}
+
+.dvz-table-view, .dvz-fixed-table-header {
+    background: #46505a;
+    padding: 0 14px
+}
+
+.dvz-table-view {
+    padding-bottom: 12px
+}
+
+.dvz-fixed-table-header {
+    overflow: hidden;
+    margin-bottom: -2px
+}
+
+.subtitle {
+    padding: 6px 14px;
+    color: #fff;
+    font-family: BloombergL, sans-serif;
+    font-size: 16px;
+    position: relative
+}
+
+.subtitle .ic {
+    position: absolute;
+    top: -10px;
+    right: 16px;
+    font-size: 50px;
+    line-height: 30px;
+    padding: 6px 3px 2px 14px;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    cursor: pointer
+}
+
+.subtitle .ic:hover {
+    opacity: 1;
+    filter: alpha(opacity=100)
+}
+
+.subtitle.topic-business {
+    background: #330053
+}
+
+.subtitle.topic-economics {
+    background: #ad177b
+}
+
+.subtitle.topic-education {
+    background: #004b81
+}
+
+.subtitle.topic-investing {
+    background: #008768
+}
+
+.subtitle.topic-lifestyle {
+    background: #73188b
+}
+
+.subtitle.topic-politics-and-policy {
+    background: #7523ff
+}
+
+.subtitle.topic-personal-finance {
+    background: #0083a0
+}
+
+.dvz-tools {
+    font-family: BloombergL, sans-serif;
+    padding: 12px 0;
+    color: #646e78
+}
+
+.dvz-tools > span, .dvz-tools a {
+    color: #87919b;
+    cursor: pointer
+}
+
+.dvz-tools > span:hover, .dvz-tools > span.active, .dvz-tools a:hover, .dvz-tools a.active {
+    color: #dce6f0
+}
+
+.dvz-tools > span.active, .dvz-tools a.active {
+    cursor: default
+}
+
+.dvz-tools .numericViewBtn .ic {
+    font-size: 42px;
+    line-height: 22px;
+    padding-right: 5px;
+    position: relative;
+    top: 6px;
+    left: -1px
+}
+
+.dvz-tools .barViewBtn .ic, .dvz-tools .infoBtn .ic, .dvz-tools .storyLink .ic {
+    position: relative;
+    padding-right: 3px;
+    top: 6px;
+    font-size: 36px;
+    line-height: 22px
+}
+
+.dvz-info {
+    display: none;
+    margin-bottom: 14px;
+    overflow: auto;
+    padding: 0 0;
+    box-sizing: content-box;
+    padding: 20px 0
+}
+
+.dvz-info .left {
+    float: left;
+    width: 70%;
+    padding-right: 20px
+}
+
+.dvz-info .right {
+    float: left;
+    width: 30%
+}
+
+.dvz-info h4 {
+    margin: 0;
+    font-family: Akzidenz, arial, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff
+}
+
+.dvz-info p {
+    margin: 0 0 20px;
+    font-family: Akzidenz, arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #afb9c3
+}
+
+.dvz-table-scroll-wrap {
+    overflow-x: hidden
+}
+
+.dvz-table-prev, .dvz-table-next {
+    float: left;
+    position: relative;
+    cursor: pointer;
+    color: #afb9c3
+}
+
+.dvz-table-prev {
+    left: 380px
+}
+
+.dvz-table-next {
+    right: 0
+}
+
+.dvz-table-next-prev {
+    position: relative;
+    padding-top: 5px;
+    height: 50px
+}
+
+.dvz-table-next-prev > * {
+    position: absolute
+}
+
+.dvz-table-next span.ic, .dvz-table-prev span.ic {
+    font-size: 45px
+}
+
+.dvz-table-next span.more, .dvz-table-prev span.more {
+    position: relative;
+    top: -12px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s
+}
+
+.dvz-table-next:hover span.more, .dvz-table-prev:hover span.more {
+    opacity: 1;
+    filter: alpha(opacity=100)
+}
+
+table {
+    border-collapse: collapse;
+    background: #46505a;
+    -webkit-transition: opacity 0.4s;
+    -moz-transition: opacity 0.4s;
+    -o-transition: opacity 0.4s;
+    transition: opacity 0.4s
+}
+
+table.hid {
+    opacity: 0;
+    filter: alpha(opacity=0)
+}
+
+table td, table th {
+    padding: 4px 14px;
+    border-left: 1px dashed #646e78;
+    color: #fff;
+    overflow: hidden
+}
+
+table td.number, table td.percent, table th.number, table th.percent {
+    width: 120px;
+    min-width: 120px
+}
+
+table td.rank, table th.rank {
+    width: 60px;
+    min-width: 60px;
+    max-width: 60px
+}
+
+table td.text_short, table th.text_short {
+    width: 180px;
+    min-width: 180px;
+    max-width: 180px
+}
+
+table td.text_long, table th.text_long {
+    width: 300px;
+    min-width: 300px;
+    max-width: 300px
+}
+
+table td.date, table th.date {
+    width: 140px;
+    min-width: 140px;
+    max-width: 140px
+}
+
+table td.shrunk, table th.shrunk {
+    display: none
+}
+
+table td:first-child, table th:first-child {
+    border-left: none
+}
+
+table tr {
+    border-bottom: 1px dashed #646e78;
+    -webkit-transition: opacity 0.4s;
+    -moz-transition: opacity 0.4s;
+    -o-transition: opacity 0.4s;
+    transition: opacity 0.4s
+}
+
+table th {
+    font: 500 14px Akzidenz, sans-serif;
+    border-bottom: 2px solid #646e78;
+    vertical-align: bottom;
+    cursor: pointer;
+    text-align: left;
+    color: #fff;
+    -webkit-font-smoothing: antialiased
+}
+
+table th.headerSortDown {
+    background: url(../images/sort-asc.png)
+}
+
+table th.headerSortUp {
+    background: url(../images/sort-desc.png)
+}
+
+table th.headerSortDown, table th.headerSortUp {
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
+    background-position: right 5px bottom 5px;
+    background-repeat: no-repeat;
+    color: #fff
+}
+
+table th.rank, table th.number, table th.percent {
+    text-align: right
+}
+
+table th.rank.headerSortDown, table th.rank.headerSortUp, table th.number.headerSortDown, table th.number.headerSortUp, table th.percent.headerSortDown, table th.percent.headerSortUp {
+    background-position: left 5px bottom 5px
+}
+
+table th .ic {
+    position: relative;
+    top: 2px;
+    font-size: 25px;
+    line-height: 12px;
+    opacity: 0.6;
+    filter: alpha(opacity=60)
+}
+
+table td {
+    font-family: BloombergL;
+    font-size: 16px;
+    color: #afb9c3;
+    position: relative;
+    white-space: nowrap
+}
+
+table td.number, table td.percent, table td.rank, table td.date {
+    text-align: right;
+    font-family: MonoNumerals, monospace
+}
+
+table td.hightlight-sort {
+    color: #fff
+}
+
+table td .ic {
+    position: absolute;
+    right: 0;
+    font-size: 25px;
+    opacity: 0.6;
+    filter: alpha(opacity=60)
+}
+
+table td a {
+    position: relative;
+    display: block;
+    color: #fff;
+    text-decoration: none
+}
+
+table td a:hover .ic {
+    opacity: 1;
+    filter: alpha(opacity=100)
+}
+
+table td .barWrap {
+    position: relative
+}
+
+table td .bar {
+    height: 25px;
+    margin-top: -3px;
+    background: #afb9c3;
+    visibility: hidden;
+    position: absolute;
+    -webkit-transition: width 0.4s;
+    -moz-transition: width 0.4s;
+    -o-transition: width 0.4s;
+    transition: width 0.4s
+}
+
+table td .bar.intro {
+    width: 0 !important
+}
+
+table td .bar-border-left {
+    border-left: 1px solid #fff
+}
+
+table td .bar-border-right {
+    border-right: 1px solid #fff
+}
+
+table.barView td.number, table.barView td.percent {
+    text-align: left
+}
+
+table .hid {
+    visibility: hidden
+}
+
+table .col1 {
+    border-right: 2px solid #646e78;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #fff;
+    font-weight: 900
+}
+
+table .entity-col-title {
+    padding-right: 22px
+}
+
+table tr:hover td {
+    background: #3d454e
+}
+
+table tr:hover .hid {
+    visibility: visible
+}
+
+table tr:hover .bar {
+    visibility: hidden
+}
+
+table tr:hover .content {
+    visibility: visible
+}
+
+table.barView .bar {
+    visibility: visible
+}
+
+table.barView .content {
+    visibility: hidden
+}
+
+.btn-complete-wrap {
+    text-align: center;
+    margin-top: 12px
+}
+
+.btn-complete-list {
+    background: #646e78;
+    color: #46505a;
+    display: inline-block;
+    padding: 4px 12px;
+    font-family: BloombergL;
+    font-weight: 900;
+    font-size: 19px;
+    cursor: pointer
+}
+
+.btn-complete-list .ic {
+    font-size: 35px;
+    line-height: 20px;
+    margin-top: 2px;
+    padding-left: 4px
+}
+
+.btn-complete-list:hover {
+    background: #dce6f0
+}
+
+.dvz-table-view-bar {
+    height: 10px;
+    margin-bottom: 4px
+}
+
+.dvz-table-view-bar.topic-business {
+    background: #580090
+}
+
+.dvz-table-view-bar.topic-economics {
+    background: #e121a1
+}
+
+.dvz-table-view-bar.topic-education {
+    background: #006fbe
+}
+
+.dvz-table-view-bar.topic-investing {
+    background: #00c497
+}
+
+.dvz-table-view-bar.topic-lifestyle {
+    background: #9e21bf
+}
+
+.dvz-table-view-bar.topic-politics-and-policy {
+    background: #9b60ff
+}
+
+.dvz-table-view-bar.topic-personal-finance {
+    background: #00b5dd
+}
+
+.tooltip {
+    position: absolute;
+    z-index: 1030;
+    display: block;
+    visibility: visible;
+    font-size: 18px;
+    line-height: 22px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 0.25s;
+    -moz-transition: opacity 0.25s;
+    -o-transition: opacity 0.25s;
+    transition: opacity 0.25s
+}
+
+.tooltip b {
+    font-weight: 900
+}
+
+.dvz-container-tooltip-headers .tooltip {
+    font-size: 13px;
+    line-height: 15px
+}
+
+.tooltip.in {
+    opacity: 1;
+    filter: alpha(opacity=100)
+}
+
+.tooltip.top {
+    margin-top: -3px;
+    padding: 5px 0
+}
+
+.tooltip-inner {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    max-width: 200px;
+    padding: 8px 8px 2px 8px;
+    color: #1e262e;
+    text-align: left;
+    text-decoration: none;
+    font-family: BloombergL, sans-serif;
+    background-color: #fff
+}
+
+.tooltip-arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid
+}
+
+.tooltip.top .tooltip-arrow {
+    bottom: -5px;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 15px 15px 0 0px;
+    border-top-color: #fff
+}
+
+.tooltip.left .tooltip-arrow {
+    top: 50%;
+    right: -5px;
+    margin-top: -5px;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #fff
+}
+
+#bbg-bus.top-banner {
+    padding: 0;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 5px 1em;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: AvenirNext-Demi, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    position: fixed;
+    top: 0;
+    z-index: 40;
+    margin: 0 auto 12px auto;
+    background-color: #000000;
+    height: 24px;
+    width: 1024px
+}
+
+#bbg-bus.top-banner .center {
+    margin: 0 auto;
+    *zoom: 1
+}
+
+#bbg-bus.top-banner .center:before, #bbg-bus.top-banner .center:after {
+    display: table;
+    content: "";
+    line-height: 0
+}
+
+#bbg-bus.top-banner .center:after {
+    clear: both
+}
+
+#bbg-bus.top-banner ul {
+    margin: 0px;
+    padding: 0px
+}
+
+#bbg-bus.top-banner ul > li {
+    float: left;
+    display: block;
+    margin: 0 10px 0 0;
+    padding: 0 10px 0 0;
+    *zoom: 1
+}
+
+#bbg-bus.top-banner ul > li:before, #bbg-bus.top-banner ul > li:after {
+    display: table;
+    content: "";
+    line-height: 0
+}
+
+#bbg-bus.top-banner ul > li:after {
+    clear: both
+}
+
+#bbg-bus.top-banner ul > li:first-of-type {
+    border-right: 1px solid white
+}
+
+#bbg-bus.top-banner a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px
+}
+
+#bbg-bus.top-banner a span {
+    display: inline-block;
+    margin-top: 2px;
+    margin-left: 5px;
+    position: relative;
+    bottom: -3px;
+    color: white
+}
+
+#consent-track {
+    background: #C6DDF1;
+    color: #555;
+    display: none;
+    font-size: 12px;
+    font-weight: bold;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-top: 4px;
+    white-space: wrap;
+    top: 24px;
+    width: 100%;
+    z-index: 800;
+    float: left
+}
+
+#consent-track a.close-consent-track {
+    color: #555;
+    float: right;
+    padding-right: 5px;
+    text-decoration: none
+}
+
+#bbg-bus.top-banner ul > li.cookie-prefs {
+    float: right;
+    display: none
+}
+
+.deck {
+    margin-top: 30px;
+    background-color: #46505A;
+    overflow: hidden;
+    width: 1024px
+}
+
+.leader_board {
+    width: 728px;
+    height: 90px;
+    margin: 10px auto
+}

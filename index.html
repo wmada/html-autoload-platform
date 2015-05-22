@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="Shortcut Icon" href="TODO 网站图标">-->
+    <title>HTML5!</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/page/index.css">
+</head>
+<body>
+<div class="container" id="base"></div>
+
+<script src="lib/prototype/prototype.part.js"></script>
+<script src="lib/jquery/jquery-2.1.4.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="lib/bootstrap/js/bootstrap-headroom.js"></script>
+<!--<script src="lib/wlib/wlib.core.js"></script>-->
+
+<script src="lib/seajs/sea.js"></script>
+<script src="lib/seajs/seajs-text.js"></script>
+<script>
+    seajs.config({
+        base: "http://localhost/html5/",
+        paths: {
+            "lib": "http://localhost/html5/lib/",
+            "tpl": "http://localhost/html5/tpl/",
+            "data": "http://localhost/html5/data/",
+            "page": "http://localhost/html5/js/page/",
+            "module": "http://localhost/html5/js/module/"
+        },
+        alias: {}
+    });
+    seajs.use(["module/loader", "module/template"], function (loader, template) {
+        $.getJSON("http://localhost/html5/data/config.json", function (data) {
+            loader.apply($('#base'), data, template);
+        });
+    });
+</script>
+<!--<script src="js/page/index.js"></script>-->
+</body>
+</html>
