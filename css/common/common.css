@@ -1,0 +1,14 @@
+.header{
+    background-color: #292f36;
+}
+
+.header-container{
+    height: 54px;
+    color: #aaa;
+    font-size: 2em;
+    line-height: 54px;
+}
+
+.header-container *{
+    height: 100%;
+}

@@ -3,4 +3,5 @@
  */
 define(function (require, exports, module) {
     exports.test = require("tpl/test.tpl");
+    exports.border = require("tpl/border.tpl");
 });

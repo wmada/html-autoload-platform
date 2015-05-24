@@ -1,19 +1,20 @@
 [
   {
-    "tplId": "test",
+    "tplId": "border",
     "dataPath": "http://localhost/html5/data/data.json",
-    "class": "col-md-12",
+    "param": {
+
+    },
+    "class": "col-md-6 col-xs-12",
     "scripts": ["http://localhost/html5/js/page/index.js"]
   },
   {
-    "tpl": "",
-    "data": {},
-    "class": "col-md-6",
+    "class": "col-md-6 col-xs-12",
     "scripts": ["http://localhost/html5/js/test.js"]
   },
   {
     "html": "<h2>马炟</h2>",
-    "class": "col-md-6",
+    "class": "col-md-6 col-xs-12",
     "scripts": []
   },
   {

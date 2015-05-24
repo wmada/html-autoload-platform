@@ -8,33 +8,42 @@
     <title>HTML5!</title>
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/common/common.css">
     <link rel="stylesheet" href="css/page/index.css">
 </head>
 <body>
+<header id="header" class="header" data-headroom>
+    <div class="container header-container">
+        <img class="col-md-2" src="img/logo.png">
+        <span class="col-md-6">RTM 热点监控</span>
+    </div>
+</header>
 <div class="container" id="base"></div>
 
 <script src="lib/prototype/prototype.part.js"></script>
 <script src="lib/jquery/jquery-2.1.4.js"></script>
 <script src="lib/bootstrap/js/bootstrap.js"></script>
 <script src="lib/bootstrap/js/bootstrap-headroom.js"></script>
-<!--<script src="lib/wlib/wlib.core.js"></script>-->
+<script src="lib/wlib/wlib.core.js"></script>
 
 <script src="lib/seajs/sea.js"></script>
+<script src="lib/seajs/seajs-css.js"></script>
 <script src="lib/seajs/seajs-text.js"></script>
 <script>
+    var baseUrl = location.href;
     seajs.config({
-        base: "http://localhost/html5/",
+        base: baseUrl,
         paths: {
-            "lib": "http://localhost/html5/lib/",
-            "tpl": "http://localhost/html5/tpl/",
-            "data": "http://localhost/html5/data/",
-            "page": "http://localhost/html5/js/page/",
-            "module": "http://localhost/html5/js/module/"
+            "lib": baseUrl + "lib/",
+            "tpl": baseUrl + "tpl/",
+            "data": baseUrl + "data/",
+            "page": baseUrl + "js/page/",
+            "module": baseUrl + "js/module/"
         },
         alias: {}
     });
     seajs.use(["module/loader", "module/template"], function (loader, template) {
-        $.getJSON("http://localhost/html5/data/config.json", function (data) {
+        $.getJSON(baseUrl + "data/config.json", function (data) {
             loader.apply($('#base'), data, template);
         });
     });
